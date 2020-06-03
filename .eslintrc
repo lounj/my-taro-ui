@@ -1,8 +1,11 @@
 {
   "extends": ["taro"],
   "rules": {
-    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }]
+    "no-unused-vars": ["off", { "varsIgnorePattern": "Taro" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "jsx-quotes": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/forbid-elements": ["off"]
   },
     "parser": "@typescript-eslint/parser",
   "parserOptions": {

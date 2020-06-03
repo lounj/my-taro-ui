@@ -32,7 +32,14 @@ const config = {
     ]
   },
   plugins: [],
+  sass: {
+    
+  },
   defineConstants: {
+  },
+  alias: {
+    'components': path.resolve(__dirname, '..', 'src/components'),
+    'uicomponents': path.resolve(__dirname, '..', 'src/uicomponents')
   },
   mini: {
     postcss: {
@@ -56,8 +63,15 @@ const config = {
     }
   },
   h5: {
+    devSever: {
+      port: 10088,
+    },
     publicPath: '/',
     staticDirectory: 'static',
+    router: {
+      mode: 'browser',
+      basename: 'myui',
+    },
     postcss: {
       autoprefixer: {
         enable: true,
