@@ -11,7 +11,8 @@ class App extends Nerv.Component {
   render() {
     return (
       <Router>
-        <div className="doc-wraoper">
+        <div className="wrap">
+          <div>1234</div>
           <Route path="/" component={Docs} />
         </div>
       </Router>

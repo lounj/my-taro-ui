@@ -7,12 +7,20 @@
     "react/react-in-jsx-scope": "off",
     "react/forbid-elements": ["off"]
   },
-    "parser": "@typescript-eslint/parser",
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "useJSXTextNode": true,
     "project": "./tsconfig.json"
-  }
-  }
+  },
+  "overrides": [
+    {
+      "files": ["build/*.js"],
+      "rules": {
+        "import/no-commonjs": "off"
+      }
+    }
+  ]
+}

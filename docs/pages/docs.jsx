@@ -7,9 +7,9 @@ class Docs extends Nerv.Component {
     return (
       <div>
         <div>sss</div>
-      <Switch>
-        <Route path="/docs/button" component={ButtonView} />
-      </Switch>
+        <Switch>
+          <Route path="/docs/button" component={ButtonView} />
+        </Switch>
       </div>
     )
   }
