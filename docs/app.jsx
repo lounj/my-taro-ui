@@ -12,7 +12,6 @@ class App extends Nerv.Component {
     return (
       <Router>
         <div className="wrap">
-          <div>1234</div>
           <Route path="/" component={Docs} />
         </div>
       </Router>

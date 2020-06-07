@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+.taro-ui-doc-wrap {
+  display: flex;
+  .taro-ui-sider {
+    width: 150px;
+    padding-left: 20px;
+    color: #222222;
+    line-height: 30px;
+  }
+  .taro-ui-md {
+    flex: 1;
+  }
+}

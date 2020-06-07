@@ -1,16 +1,25 @@
 import * as Nerv from 'nervjs';
 import { Switch, Route } from 'react-router-dom';
-import ButtonView from '../view/Button';
+import * as View from '../view';
+import Sider from '../components/sider';
+import { menuList } from './const';
+import './docs.scss';
 
 class Docs extends Nerv.Component {
   render() {
     return (
-      <div>
-        <div>sss</div>
-        <Switch>
-          <Route path="/docs/button" component={ButtonView} />
-        </Switch>
+      <div className="taro-ui-doc-wrap">
+        <Sider />
+        <div className="taro-ui-md">
+          <Switch>
+            {menuList.map(item => (
+              <Route path={`/docs/${item.id}`} component={item.component} />
+            ))}
+          </Switch>
+        </div>
       </div>
     )
   }
 }
+
+export default Docs;
